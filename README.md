@@ -1,4 +1,4 @@
-# igofer
+# iGofer
 
 ```
 A market place for local services
