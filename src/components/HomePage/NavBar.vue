@@ -21,15 +21,18 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
+                    <ul class="navbar-nav mr-auto">
                         <!-- <li class="nav-item active">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li> -->
-                        <router-link id="sign-in" class="nav-link" to="/SignIn" tag="li" active-class="active" exact>Services</router-link>
-                        <router-link id="sign-up" class="nav-link" to="/SignUp" tag="li" active-class="active">Store</router-link>
-                        <router-link id="worker" class="nav-link" to="" tag="li" active-class="active">Join as a pro</router-link>
-                        <router-link id="worker" class="nav-link" to="" tag="li" active-class="active">Sign up</router-link>
-                        <router-link id="worker" class="nav-link" to="" tag="li" active-class="active">Log In</router-link>
+                        <router-link id="sign-in" class="nav-link" to="/services" tag="li" active-class="active" exact>Services</router-link>
+                        <router-link id="sign-up" class="nav-link" to="/store" tag="li" active-class="active">Store</router-link>
+                        
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <router-link id="worker" class="nav-link" to="/join" tag="li" active-class="active">Join as a pro</router-link>
+                        <router-link id="worker" class="nav-link" to="/signup" tag="li" active-class="active">Sign up</router-link>
+                        <router-link id="worker" class="nav-link" to="/login" tag="li" active-class="active">Log In</router-link>
                     </ul>
                 </div>
             </nav>
@@ -50,7 +53,7 @@ export default {
         left: 0px;
         top: 0px;
         background-color: #FFFFFF;
-        height: 70px;
+        height: 50px;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     }
 
@@ -64,6 +67,7 @@ export default {
     li {
         font-family: "Avenir Next LT Pro";
         font-size: 14px;
+        font-weight: 500;
         line-height: 17px;
         text-align: center;
         color: #333456;
@@ -76,16 +80,15 @@ export default {
 
     } */
 
-    #sign-up {
+    /* #sign-up {
         color: #FDFDFD;
         padding: 7px 30px;
-    }
+    } */
 
-    #sign-in, #worker{
+    /* #sign-in, #worker{
          color: #F26132;
          text-align: center;
          padding: 7px 30px
-         /* font-size: 18px; */
-     }
+     } */
 
     </style>

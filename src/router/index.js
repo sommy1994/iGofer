@@ -5,12 +5,13 @@ import Services from '../views/Services.vue'
 import LogIn from '../components/LogIn.vue'
 import SignUp from '../components/SignUp.vue'
 import JoinAsPro from '../components/JoinAsPro.vue'
+import Store from '../views/Store.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
+    path: '',
     name: 'home',
     component: HomePage
   },
@@ -33,7 +34,7 @@ const routes = [
     path: '/login',
     name: 'login',
     component: LogIn
-  }
+  },
   {
     path: '/join',
     name: 'join',
