@@ -136,7 +136,7 @@
             <!-- services -->
         <section>
             <div id="exTab1" class="container">
-                <ul class="nav nav-pills">
+                <ul class="nav nav-pills mb-4">
                     <li class="active">
                         <a href="#1a" data-toggle="tab">Cleaning</a>
                     </li>
@@ -153,9 +153,43 @@
                         <a href="#5a" data-toggle="tab">Fumigation</a>
                     </li>
                     <li>
-                        <a href="#6a" data-toggle="tab">More <i class="ti-arrow-right"></i></a>
+                        <a href="#6a" data-toggle="tab">more <span><img src="assets/img/icons/arrow.png" alt="arrow"></span></a>
                     </li>
                 </ul>
+
+                <div class="cleaning">
+                    <div class="text-left pt-4 pl-5 container">
+                        <img class="pb-2" src="assets/img/icons/cleaning.png" alt="cleaning-image">
+                        <p class="text-left text-light">
+                            For all your cleaning services you in mind <br> and some you haven't thought of yet.
+                        </p>
+                    </div>
+
+                    <p class="text-left text-light container pt-5 pl-5">view all cleaning services <a href="#"> <span> <img src="assets/img/icons/arrow.png" alt="arrow"> </span> </a> </p>
+                </div>
+
+                <div class="row mt-3 services-types">
+                    <div class="col-md-3">
+                        <img src="assets/img/services/housecleaning.svg" alt="house-cleaning">
+                        <h5 class="text-left mb-0">House cleaning</h5>
+                        <p class="text-left">20 professionals</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/img/services/laundry.svg" alt="laundry">
+                        <h5 class="text-left mb-0">Laundry</h5>
+                        <p class="text-left">20 professionals</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/img/services/waste.svg" alt="waste">
+                        <h5 class="text-left mb-0">Waste Disposal</h5>
+                        <p class="text-left">20 professionals</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/img/services/officecleaning.svg" alt="cleaning">
+                        <h5 class="text-left mb-0">Office cleaning</h5>
+                        <p class="text-left">20 professionals</p>
+                    </div>
+                </div>
 
                  <!-- <div class="tab-content clearfix">
                 <div class="tab-pane active" id="1a">
@@ -181,7 +215,7 @@
         </section>
 
     <!-- Testimonial -->
-        <section class="container">
+        <section class="container mt-5">
             <div class="row">
                 <div class="col-md-6">
                     <p class="text-left customer">Our customers love what <br> we do.</p>
@@ -288,9 +322,8 @@ export default {
 <style scoped>
 
 @font-face {
-  font-family: 'Avenir Next LT';
-  src:  url('/assets/fonts/AvenirNextLTpro-Bold.otf') format('otf'),
-        url('/assets/fonts/AvenirNextLTpro-Demi.otf') format('otf');
+  font-family: 'Avenir';
+  src:  url('/assets/fonts/AvenirNextLTpro-Bold.otf') format('otf');
   font-weight: medium;
   font-style: normal;
 }
@@ -306,7 +339,7 @@ export default {
 }
 
 h2 {
-    font-family: 'Avenir Next LT';
+    font-family: 'Avenir';
     font-style: normal;
     font-weight: 600 !important;
     font-size: 3em !important;
@@ -369,8 +402,8 @@ h6+p {
 
 [how-it-works] svg {
     background: rgba(242, 97, 50, 0.12);
-     background-position: center;
-  background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 50%;
     display: block;
     margin: auto;
@@ -395,7 +428,26 @@ h6+p {
 
 }
 
+.cleaning{
+    background: url('/assets/img/services/cleaning.svg');
+    height: 250px;
+    border-radius: 3px;
+}
 
+.cleaning img, .cleaning a{
+    color: #fff !important;
+}
+
+.services-types img{
+    width: 260px;
+}
+
+.services-types h5{
+    font-size: 18px;
+}
+.services-types p{
+    font-size: 14px;
+}
 
 
 /* become a worker */
