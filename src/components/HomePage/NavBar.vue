@@ -15,13 +15,14 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mr-auto">
                         <router-link id="sign-in" class="nav-link" to="/services" tag="li" active-class="active" exact>Services</router-link>
-                        <router-link id="sign-up" class="nav-link" to="/store" tag="li" active-class="active">Store</router-link>
+                        <router-link id="sti
+                        " class="nav-link" to="/store" tag="li" active-class="active">Store</router-link>
 
                     </ul>
                     <ul class="navbar-nav ml-auto pr-5">
-                        <router-link id="worker" class="nav-link" to="/join" tag="li" active-class="active">Join as a pro</router-link>
-                        <router-link id="worker" class="nav-link" to="/signup" tag="li" active-class="active">Sign up</router-link>
-                        <router-link id="worker" class="nav-link" to="/login" tag="li" active-class="active">Log In</router-link>
+                        <router-link id="join" class="nav-link" to="/join" tag="li" active-class="active">Join as a pro</router-link>
+                        <router-link id="sign-up" class="nav-link" to="/signup" tag="li" active-class="active">Sign up</router-link>
+                        <router-link id="login" class="nav-link" to="/login" tag="li" active-class="active">Log In</router-link>
                     </ul>
                 </div>
             </nav>

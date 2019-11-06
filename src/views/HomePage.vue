@@ -14,7 +14,8 @@
 
             <!-- services display -->
             <div class="advert d-flex flex-row">
-                <div class="p-5" service>
+                <div class="p-4" service>
+                    <img src="assets/img/icons/cleaning2.svg" alt="cleaning">
                     <p>Cleaning</p>
                 </div>
                 <div class="p-5">
@@ -23,7 +24,8 @@
                 <div class="p-5">
                     <p>Plumbing</p>
                 </div>
-                <div class="p-5">
+                <div class="p-4">
+                    <img src="assets/img/icons/painting.png" alt="painting">
                     <p>Painting</p>
                 </div>
                 <div class="p-5">
@@ -131,22 +133,78 @@
             </div>
         </section>
 
-    <!-- Testimonial -->
+            <!-- services -->
         <section>
-            <div class="row container">
+            <div id="exTab1" class="container">
+                <ul class="nav nav-pills">
+                    <li class="active">
+                        <a href="#1a" data-toggle="tab">Cleaning</a>
+                    </li>
+                    <li>
+                        <a href="#2a" data-toggle="tab">Carpentry</a>
+                    </li>
+                    <li>
+                        <a href="#3a" data-toggle="tab">Plumbering</a>
+                    </li>
+                    <li>
+                        <a href="#4a" data-toggle="tab">Painting</a>
+                    </li>
+                    <li>
+                        <a href="#5a" data-toggle="tab">Fumigation</a>
+                    </li>
+                    <li>
+                        <a href="#6a" data-toggle="tab">More <i class="ti-arrow-right"></i></a>
+                    </li>
+                </ul>
+
+                 <!-- <div class="tab-content clearfix">
+                <div class="tab-pane active" id="1a">
+                    <h3>Content's background color is the same for the tab</h3>
+                </div>
+                <div class="tab-pane" id="2a">
+                    <h3>We use the class nav-pills instead of nav-tabs which automatically creates a background color
+                        for the tab</h3>
+                </div>
+                <div class="tab-pane" id="3a">
+                    <h3>We applied clearfix to the tab-content to rid of the gap between the tab and the content</h3>
+                </div>
+                <div class="tab-pane" id="4a">
+                    <h3>We use css to change the background color of the content to be equal to the tab</h3>
+                </div>
+                 <div class="tab-pane" id="5a">
+                    <h3>We use css to change the background color of the content to be equal to the tab</h3>
+                </div>
+                 <div class="tab-pane" id="6a">
+                    <h3>We use css to change the background color of the content to be equal to the tab</h3>
+                </div> -->
+            </div>
+        </section>
+
+    <!-- Testimonial -->
+        <section class="container">
+            <div class="row">
                 <div class="col-md-6">
-                    <p class="text-left">Our customers love what <br> we do.</p>
-                    <p class="text-left">Over 200 people use iGofer for their handyman services <br> and make their lives easier and better </p>
+                    <p class="text-left customer">Our customers love what <br> we do.</p>
+                    <p class="text-left customer-word">Over 200 people use iGofer for their handyman services <br> and make their lives easier and better </p>
                 </div>
                 <div class="col-md-6">
-                    <div>
-                        <p class="text-left" >I was interested. So I asked for someone to clean my house. They jumped at it. 10 minutes later a certain Godwin called me. Godwin showed up, dressed and well mannered. 3 hours  later he had done a great job!</p>
-                        <p class="text-left mb-0">Folajimi Aroloye</p>
-                        <p class="text-left">Fourth Canvas</p>
+                    <div class="testimonal p-3">
+                        <p class="text-left " >I was interested. So I asked for someone to clean my house. They jumped at it. 10 minutes later a certain Godwin called me. Godwin showed up, dressed and well mannered. 3 hours  later he had done a great job!</p>
+                        <div class="d-flex">
+                            <img src="/assets/img/testimonial/picture1.svg" alt="testimonial">
+                            <div>
+                            <p class="text-left mb-0 pt-4 pl-2 font-weight-bolder">Folajimi Aroloye</p>
+                            <p class="text-left pl-2">Fourth Canvas</p>
+                            </div>
+                        </div>
+
                     </div>
-                        <div>
+                        <div class="testimonal p-3 mt-3 mb-5">
                          <p class="text-left" >I was interested. So I asked for someone to clean my house. They jumped at it. 10 minutes later a certain Godwin called me. Godwin showed up, dressed and well mannered. 3 hours  later he had done a great job!</p>
-                        <p class="text-left" >Folajimi Aroloye</p>
+                        <div class="d-flex">
+                             <img src="/assets/img/testimonial/picture2.svg" alt="testimonial">
+                        <p class="text-left pt-3 pl-2 font-weight-bolder" >Folajimi Aroloye</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -158,9 +216,9 @@
             <div class="get-app-div">
                 <h3 class="m-auto">Get the app</h3>
                 <p class="m-auto">It's even better on your phone</p>
-                <img src="assets/img/playstore.svg" class="mt-2" alt="google playstore">
+                <img src="assets/img/playstore.svg" class="mt-4" alt="google playstore">
 
-                <div class="container row mt-4">
+                <div class="container row mt-4 content">
                     <div class="col-md-6">
                         <svg  width="221" height="294" viewBox="0 0 221 294" fill="none"
                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -185,9 +243,10 @@
                             </defs>
                         </svg>
                     </div>
+
                         <div class="col-md-6">
-                            <p class="download-app">Download the iGofer app</p>
-                                <ul>
+                            <p class="download-app pt-5">Download the iGofer app</p>
+                                <ul class="app-features">
                                     <li> <span>Book and mange appointments</span> </li>
                                     <li> <span>Message on the go</span> </li>
                                     <li> <span>View workers profiles and ratings</span> </li>
@@ -201,14 +260,14 @@
         <!-- become an igofer worker -->
         <section>
             <div class="row">
-                <dv class="col-md-6 col-sm-12">
+                <div class="col-md-6 col-sm-12">
                     <img class="become-worker" src="/assets/img/homepage/becomeworker.svg" alt="become a worker">
-                </dv>
-                <dv class="col-md-6 col-sm-12">
+                </div>
+                <div class="col-md-6 col-sm-12">
                     <h4 class="text-left">Join the pool of professional <br> iGofer workers</h4>
                     <p class="text-left">Whatever work you do, we'll find you the jobs your want.</p>
                     <button class="btn">Become an iGofer worker</button>
-                </dv>
+                </div>
             </div>
         </section>
         <the-footer />
@@ -227,6 +286,15 @@ export default {
 </script>
 
 <style scoped>
+
+@font-face {
+  font-family: 'Avenir Next LT';
+  src:  url('/assets/fonts/AvenirNextLTpro-Bold.otf') format('otf'),
+        url('/assets/fonts/AvenirNextLTpro-Demi.otf') format('otf');
+  font-weight: medium;
+  font-style: normal;
+}
+
 [landing-content] {
     margin-top: 3.125em;
 }
@@ -238,7 +306,7 @@ export default {
 }
 
 h2 {
-    font-family: 'Muli', 'sans-serif';
+    font-family: 'Avenir Next LT';
     font-style: normal;
     font-weight: 600 !important;
     font-size: 3em !important;
@@ -250,7 +318,7 @@ h2 {
 }
 
 .word {
-    font-family: 'Muli', 'sans-serif';
+    font-family: 'Avenir Next LT';
     font-size: 1.5em !important;
     /* line-height: 2.0625em; */
     margin-left: 113px;
@@ -260,7 +328,7 @@ h2 {
 }
 
 .advert {
-    background: #FFFFFF;
+    background: #fff;;
     box-shadow: 0px 2px 15px rgba(98, 98, 98, 0.25);
     height: 80px;
     border: 1px solid #EAEAEA;
@@ -268,7 +336,7 @@ h2 {
 }
 
 [service] {
-    margin-left: 195px;
+    margin-left: 280px;
 }
 
 
@@ -314,6 +382,22 @@ h6+p {
     margin-top: 115px;
 }
 
+/* services */
+
+.nav li{
+    padding: 0px 42px 5px 5px !important;
+}
+
+.nav li a{
+    color: #333456 !important;
+    font-size: 18px;
+    line-height: 22px;
+
+}
+
+
+
+
 /* become a worker */
 
 h4 {
@@ -356,17 +440,18 @@ button:hover {
 
 /* get iGofer app from playstore */
 
-ul > li{
+.app-features > li{
     list-style-type: none;
     list-style-image: url(/assets/img/checkmark.png);
     margin-left: 150px;
     padding: 0px;
     text-align: left;
 }
-ul{
+.app-features {
     margin: 0;
     padding: 0;
 }
+
 
 li span {
   position: relative;
@@ -397,24 +482,21 @@ h3{
     padding-top: 75px;
 }
 
-
-/* .first-box {
-  width:300px;
-  float:left;
-  height: 150px;
-  margin: 50px
+.content{
+    padding-top: 65px;
 }
 
+.testimonal{
+    background: #F5F5F7;
+border-radius: 3px;
+}
 
-.second-box {
-  width:300px;
-  height: 150px;
-  float:right;
-  margin: 50px
-} */
+.customer{
+    font-size: 42px;
+}
 
-/* .become-worker{
-    width: 720px;
-    height: 450px;
-} */
+.customer-word{
+    font-size: 18px;
+}
+
 </style>
